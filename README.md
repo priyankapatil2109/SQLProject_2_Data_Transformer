@@ -2,76 +2,53 @@
 
 ## 📌 Project Overview
 
-**Data Transformer** is a MySQL-based SQL project created to practice and demonstrate important SQL concepts used in data analysis.
+**Data Transformer** is a MySQL-based SQL project created for practicing SQL concepts used in data analysis.
 
-The project works with customer, order, and employee data and demonstrates how SQL can be used to combine data, perform calculations, extract information, manipulate text, analyze data using window functions, and categorize records using CASE expressions.
+The project uses three tables:
 
----
+- **Customers** – Customer information
+- **Orders** – Order details
+- **Employees** – Employee and salary information
 
-## 🎯 Objective
+## 🎯 SQL Concepts Covered
 
-The main objectives of this project are:
+- INNER JOIN
+- LEFT JOIN
+- RIGHT JOIN
+- FULL OUTER JOIN using UNION
+- Subqueries
+- Date Functions
+- String Functions
+- Window Functions
+- CASE Expressions
+- Aggregate Functions
 
-- To understand and implement different types of SQL JOINs.
-- To use subqueries for data analysis.
-- To work with SQL date functions.
-- To manipulate and format string data.
-- To use window functions for advanced analysis.
-- To use CASE expressions for data categorization.
-- To create useful reports from relational database tables.
+## 📊 Project Tasks
 
----
+The project performs:
 
-## 🗄️ Database Structure
+- Combining customer and order data using JOINs
+- Finding orders and employees above average values
+- Extracting and formatting dates
+- Manipulating strings
+- Calculating running totals
+- Ranking orders
+- Applying discounts
+- Categorizing employee salaries
+- Creating summary reports
 
-The project uses a database named:
+## 🛠️ Technologies Used
 
-**DataTransformer**
+- MySQL
+- SQL
+- MySQL Workbench
+- VS Code
+- GitHub
 
-The database contains three main tables:
+## 📁 Project Files
 
-### 1. Customers
-
-Stores information about customers.
-
-| Column | Description |
-|---|---|
-| CustomerID | Unique ID of the customer |
-| FirstName | Customer's first name |
-| LastName | Customer's last name |
-| Email | Customer's email address |
-| RegistrationDate | Customer registration date |
-
----
-
-### 2. Orders
-
-Stores information about customer orders.
-
-| Column | Description |
-|---|---|
-| OrderID | Unique ID of the order |
-| CustomerID | ID of the customer who placed the order |
-| OrderDate | Date of the order |
-| TotalAmount | Total value of the order |
-
-**Relationship:**
-
-`Customers.CustomerID → Orders.CustomerID`
-
----
-
-### 3. Employees
-
-Stores information about employees.
-
-| Column | Description |
-|---|---|
-| EmployeeID | Unique ID of the employee |
-| FirstName | Employee's first name |
-| LastName | Employee's last name |
-| Department | Employee department |
-| HireDate | Employee hiring date |
-| Salary | Employee salary |
-
-
+```text
+SQLProject_2_Data_Transformer/
+│
+├── data_transformer.sql
+└── README.md
